@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Bee</title>
+    <link rel="stylesheet" href="./style/services.css" />
+  </head>
+  <body>
+<!-- heena -->
+    <div class="services-section">
+      <h2>Our Services</h2>
+      <div class="service-card" onclick="showDetails('service1')">
+          <h3>Flight Booking</h3>
+          <p>Find and book the best flights for your journey.</p>
+          <div class="service-details" id="service1">
+              <p>Get the most competitive prices for flights to your desired destinations. We make travel easy and affordable.</p>
+          </div>
+      </div>
+      <div class="service-card" onclick="showDetails('service2')">
+          <h3>Hotel Reservations</h3>
+          <p>Discover comfortable and convenient accommodations.</p>
+          <div class="service-details" id="service2">
+              <p>Book hotels at your preferred location with a variety of options to suit your budget and preferences.</p>
+          </div>
+      </div>
+      <div class="service-card" onclick="showDetails('service3')">
+          <h3>Travel Packages</h3>
+          <p>Explore curated travel packages for a hassle-free experience.</p>
+          <div class="service-details" id="service3">
+              <p>Choose from our exclusive travel packages that include flights, hotels, and activities for a seamless journey.</p>
+          </div>
+      </div>
+  </div>
+    
+  </body>
+</html>
+<script type="module" src="./script/services.js"></script>
