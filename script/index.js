@@ -4,4 +4,3 @@ let navbar=document.querySelector(".navbar")
 navbar.innerHTML=nav;
 
 
-
