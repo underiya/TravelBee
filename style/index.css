@@ -1,0 +1,16 @@
+.text-data{
+    width: 40%;
+    font-size: 150%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+
+  color: #ddd;
+}
+.text-head{
+    font-size: 100px;
+}
+.text-data span{
+    color: rgb(230,107,24);
+
+}
