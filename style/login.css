@@ -12,9 +12,9 @@ body {
   font-weight: 400;
   color: #666666;
   background: #eaeff4;
-  background-image: url("/images/logback.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/images/logback.jpg");
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 }
 
 .wrapper {
@@ -35,7 +35,7 @@ body {
   height: 400px;
   display: flex;
   background: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 
@@ -162,13 +162,11 @@ p {
   font-size: 16px;
   letter-spacing: 1px;
   outline: none;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
+  /* border: 1px solid #cccccc; */
+  /* border-radius: 5px; */
+  border: none;
+  border-bottom: 1px solid black;
 }
-
-/* .login-form input:focus {
-  border-color: #ff574e;
-} */
 
 .login-form input.btn {
   color: #ffffff;
