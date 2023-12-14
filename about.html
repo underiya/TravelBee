@@ -28,12 +28,49 @@
       </div>
      
     </div>
-      <div class="chotabhai">
-        <img src="pics/camp.jpg" alt="" class="sahihai">
-        <img src="pics/family.jpg" alt="" class="thikhai"> 
-
+   <div class="chotabhai">
+        <img src="" alt="" class="sahihai">
+        <img src="" alt="" class="thikhai">
+        <div class="missionhai">
+          <h1>Our Mission</h1>
+          <p>Our mission is to inspire and empower travelers by providing a user-friendly platform that caters to all your travel needs. We understand that each journey is unique, and we are committed to delivering personalized and memorable experiences to every customer.</p>
+        </div>
       </div>
+      
    </div> 
-   
+   <script>
+    const sahihaiImages = [
+      'pics/beach.jpg',
+      'pics/nightblack.jpg',
+      'pics/family.jpg',
+      'pics/waiter-serving.jpg'
+    ];
+  
+    const thikhaiImages = [
+      'pics/girl-with-paddle.jpg',
+      'pics/breakfast-hotel.jpg',
+      'pics/camp.jpg',
+      'pics/sunset-pool.jpg'
+    ];
+  
+    let sahihaiIndex = 0;
+    let thikhaiIndex = 0;
+  
+    function changeSahihaiImage() {
+      const sahihaiElement = document.querySelector('.sahihai');
+      sahihaiElement.src = sahihaiImages[sahihaiIndex];
+      sahihaiIndex = (sahihaiIndex + 1) % sahihaiImages.length;
+    }
+  
+    function changeThikhaiImage() {
+      const thikhaiElement = document.querySelector('.thikhai');
+      thikhaiElement.src = thikhaiImages[thikhaiIndex];
+      thikhaiIndex = (thikhaiIndex + 1) % thikhaiImages.length;
+    }
+  
+    setInterval(changeSahihaiImage, 1500);
+    setInterval(changeThikhaiImage, 1500);
+  </script>
+
   </body>
 </html>
