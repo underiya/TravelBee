@@ -1,20 +1,39 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    font-size: larger;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('hot-air-balloon.jpg'); /* Replace 'balloon.jpg' with the actual path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #16661c;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
 }
 
 .services-section {
     max-width: 800px;
     margin: 50px auto;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.199); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .service-card {
-    background-color: #fff;
+    background: linear-gradient(to bottom right,rgba(70, 172, 153, 0.269),rgba(66, 210, 78, 0.429) );
+    color: #0f1a82ac;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(8, 7, 76, 0.1);
     padding: 20px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -22,15 +41,17 @@ body {
 }
 
 .service-card:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(7, 1, 1, 0);
 }
 
 .service-card h3 {
-    color: #333;
+    color: #06011798;
+    font-weight: bolder;
 }
 
 .service-card p {
-    color: #666;
+    color: #071d5f6a;
+    font-weight: bold;
 }
 
 .service-details {

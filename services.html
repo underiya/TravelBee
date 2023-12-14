@@ -5,34 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Bee</title>
     <link rel="stylesheet" href="./style/services.css" />
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=DM+Serif+Display&family=Dela+Gothic+One&family=Gabarito&family=Jost:wght@600&family=Montserrat&family=Mukta&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300&family=Open+Sans:wght@300;400&family=Outfit&family=Patua+One&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
 <!-- heena -->
+<nav class="navbar"></nav>
     <div class="services-section">
       <h2>Our Services</h2>
       <div class="service-card" onclick="showDetails('service1')">
-          <h3>Flight Booking</h3>
+          <h3>Flight Bookings</h3>
           <p>Find and book the best flights for your journey.</p>
-          <div class="service-details" id="service1">
+          <!-- <div class="service-details" id="service1">
               <p>Get the most competitive prices for flights to your desired destinations. We make travel easy and affordable.</p>
-          </div>
+          </div> -->
+          <div class="service-details" id="service1">
+            <p>Get the most competitive prices for flights to your desired destinations. We make travel easy and affordable.</p>
+            <button onclick="showFlightBookingForm()">Book Now</button>
+            <div id="flightBookingForm" style="display: none;">
+                <form onsubmit="bookFlight()">
+                    <label for="departureCity">Departure City:</label>
+                    <input type="text" id="departureCity" required>
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" required>
+                    <label for="departureDate">Departure Date:</label>
+                    <input type="date" id="departureDate" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
       </div>
       <div class="service-card" onclick="showDetails('service2')">
           <h3>Hotel Reservations</h3>
           <p>Discover comfortable and convenient accommodations.</p>
-          <div class="service-details" id="service2">
+          <!-- <div class="service-details" id="service2">
               <p>Book hotels at your preferred location with a variety of options to suit your budget and preferences.</p>
-          </div>
+          </div> -->
       </div>
       <div class="service-card" onclick="showDetails('service3')">
           <h3>Travel Packages</h3>
           <p>Explore curated travel packages for a hassle-free experience.</p>
-          <div class="service-details" id="service3">
+          <!-- <div class="service-details" id="service3">
               <p>Choose from our exclusive travel packages that include flights, hotels, and activities for a seamless journey.</p>
-          </div>
+          </div> -->
       </div>
   </div>
-    
+  <script type="module" src="./script/services.js"></script>
   </body>
 </html>
-<script type="module" src="./script/services.js"></script>
+
