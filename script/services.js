@@ -42,7 +42,38 @@ function showBookingForm() {
         const toValue = toInput.value;
         const dateValue = dateInput.value;
         console.log('From:', fromValue, 'To:', toValue, 'Date:', dateValue);
+
+        // const bookingData = {
+        //     from : fromValue,
+        //     to : toValue,
+        //     date : dateValue
+        // }
     });
+    
+   
+
+    //fetch booking data
+    // let bookingURL = "https://657c1c05394ca9e4af157453.mockapi.io/bookings/bookings";
+    // fetch(bookingURL,{
+    //     method: 'POST',
+    //     headers:{
+    //         'Content-Type' : 'application/json',
+    //     },
+    //     body: JSON.stringify(bookingData)
+    //     .then(res=>{
+    //         if(!res.ok){
+    //             throw new Error(`HTTP error! Status: ${res.status}`);
+    //         }
+    //         return res.json();
+    //     })
+    //     .then(data=>{
+    //         alert(`Your booking is successful!\nDetails:\nFrom:${data.from}\nTo:${data.to}\nDate:${data.date}`);
+    //     })
+    //     .catch(error=>{
+    //         console.error(error);
+    //         alert("There was an error submitting your booking. Please try again.");
+    //     })
+    // });
 
     // Append the form to the container
     const formContainer = document.getElementById('booking-form-container');
