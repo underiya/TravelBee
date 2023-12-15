@@ -1,13 +1,33 @@
 
 
+
+// POST DATA
+
+
 let url = `https://travel-bee-server.onrender.com/users`;
 
-let fname = document.getElementById("fname").value;
-let lname = document.getElementById("lname").value;
-let email = document.getElementById("email").value;
-let password = document.getElementById("pass").value;
+let fname = document.querySelector(".fname");
+let lname = document.querySelector(".lname");
+let email = document.querySelector(".email");
+let password = document.querySelector(".pass");
 
-let submit = document.getElementById("submit").value;
+let submit = document.querySelector(".submit");
+
+
+submit.addEventListener("click", (event) => {
+  event.preventDefault();
+  
+  if(fname.value !== "" && lname.value !=="" && email.value !=="" && password.value !=""){
+      postData();
+      alert("Account Created Successfully");
+      window.location.replace("./login.html");
+  }
+  else{
+    alert("Please fill out all fields!");
+  }
+
+});
+
 
 
 async function postData() {
@@ -15,20 +35,18 @@ async function postData() {
     let res = await fetch(url, {
       method: "POST",
       headers: {
-        "Content-type": "application/json"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
-            "fname": `${fname}`,
-            "lname": `${lname}`,
-            "email": `${email}`,
-            "password": `${password}`
+            "firstname": `${fname.value}`,
+            "lastname": `${lname.value}`,
+            "email": `${email.value}`,
+            "password": `${password.value}`
       })
     });
     let data = await res.json();
-    console.log(data);
+     console.log(data);
   } catch (error) {
     console.log(error);
   }
 }
-
-getData();
