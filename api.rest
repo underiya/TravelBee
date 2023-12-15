@@ -18,5 +18,16 @@ Content-Type: application/json
     "password":999
 }
 ###
-DELETE https://travel-bee-server.onrender.com/users/6
+DELETE https://travel-bee-server.onrender.com/users/3
+
+###
+POST https://travel-bee-server.onrender.com/users
+Content-Type: application/json
+
+{
+    "fname":"shyamgopal",
+    "lname":"Biswas",
+    "email":"sgb@gmail.com",
+    "password":"sgb@22114"   
+}
 
