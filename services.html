@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Bee</title>
-    <link rel="stylesheet" href="./style/services.css" />
-    <link rel="stylesheet" href="./style/navbar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=DM+Serif+Display&family=Dela+Gothic+One&family=Gabarito&family=Jost:wght@600&family=Montserrat&family=Mukta&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300&family=Open+Sans:wght@300;400&family=Outfit&family=Patua+One&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-  </head>
-  <body>
-<!-- heena -->
-<nav class="navbar"></nav>
-    <div class="services-section">
-      <h2>Our Services</h2>
-      <div class="service-card" onclick="showDetails('service1')">
-          <h3>Flight Bookings</h3>
-          <p>Find and book the best flights for your journey.</p>
-          <!-- <div class="service-details" id="service1">
-              <p>Get the most competitive prices for flights to your desired destinations. We make travel easy and affordable.</p>
-          </div> -->
-          <div class="service-details" id="service1">
-            <p>Get the most competitive prices for flights to your desired destinations. We make travel easy and affordable.</p>
-            <button onclick="showFlightBookingForm()">Book Now</button>
-            <div id="flightBookingForm" style="display: none;">
-                <form onsubmit="bookFlight()">
-                    <label for="departureCity">Departure City:</label>
-                    <input type="text" id="departureCity" required>
-                    <label for="destination">Destination:</label>
-                    <input type="text" id="destination" required>
-                    <label for="departureDate">Departure Date:</label>
-                    <input type="date" id="departureDate" required>
-                    <button type="submit">Submit</button>
-                </form>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/services.css">
+    <!-- <link rel="stylesheet" href="navbar.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=DM+Serif+Display&family=Dela+Gothic+One&family=Gabarito&family=Jost:wght@600&family=Montserrat&family=Mukta&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300&family=Open+Sans:wght@300;400&family=Outfit&family=Patua+One&family=Pixelify+Sans&family=Playpen+Sans&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <title>Travel Services</title>
+    <script type="module" src="./script/services.js"></script>
+</head>
+<body>
+<div class="navbar"></div>
+    <header>
+        <h1>Travel Bee Services</h1>
+    </header>
+
+    <section>
+
+        <div class="flight-booking">
+            <h2>Flight Bookings</h2>
+            <p>Book your flights with us and enjoy a seamless travel experience.</p>
+            <!-- Add actual flight booking form or integration here -->
+            <button id="book-now-btn" >Book Now</button>
+    <div id="booking-form-container"></div>
+        </div>
+        <div class="flight-booking">
+        <h2>Travel Packages</h2>
+        <div class="packages">
+            <div class="package">
+                <h3>Premium</h3>
+                <p>Experience luxury at its best.</p>
+                <!-- Add pricing and booking button -->
+                <button>Select Package</button>
+            </div>
+
+            <div class="package">
+                <h3>Deluxe</h3>
+                <p>A perfect blend of comfort and affordability.</p>
+                <!-- Add pricing and booking button -->
+                <button>Select Package</button>
+            </div>
+
+            <div class="package">
+                <h3>Super Deluxe</h3>
+                <p>The ultimate travel experience.</p>
+                <!-- Add pricing and booking button -->
+                <button>Select Package</button>
             </div>
         </div>
-      </div>
-      <div class="service-card" onclick="showDetails('service2')">
-          <h3>Hotel Reservations</h3>
-          <p>Discover comfortable and convenient accommodations.</p>
-          <!-- <div class="service-details" id="service2">
-              <p>Book hotels at your preferred location with a variety of options to suit your budget and preferences.</p>
-          </div> -->
-      </div>
-      <div class="service-card" onclick="showDetails('service3')">
-          <h3>Travel Packages</h3>
-          <p>Explore curated travel packages for a hassle-free experience.</p>
-          <!-- <div class="service-details" id="service3">
-              <p>Choose from our exclusive travel packages that include flights, hotels, and activities for a seamless journey.</p>
-          </div> -->
-      </div>
-  </div>
-  <script type="module" src="./script/services.js"></script>
-  </body>
-</html>
+    </div>
+    </section>
 
+</body>
+
+</html>
