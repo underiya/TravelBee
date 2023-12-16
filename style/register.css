@@ -50,6 +50,11 @@ input[type=number]{
 input :hover {
     background-color: red;
 }
+.error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
 select{
     border: none;
     border-bottom: 1px solid black;
@@ -78,6 +83,12 @@ button{
 button:hover{
     background-color:#333333;
 }
+.back{
+   text-decoration: solid;
+   margin-left: 150px;
+   color: #4caf50;
+   font-weight:bold;
+}
 
 @media(max-width: 575.98px){
     input, select, button{
@@ -86,5 +97,9 @@ button:hover{
     .content{
         width: 100%;
         height: auto;
+    }
+    .back{
+        /* display: inline; */
+        margin-left: 30%;
     }
 } 
