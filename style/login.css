@@ -94,25 +94,10 @@ p {
   object-fit: cover;
 }
 
-@media(max-width: 575.98px) {
-  .container {
-    flex-direction: column;
-    box-shadow: none;
-  }
-
-  .col-left,
-  .col-right {
-    width: 100%;
-    margin: 0;
-    padding: 30px;
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
-}
-
 .login-text {
   position: relative;
   width: 100%;
+  text-wrap: wrap;
   color: #ffffff;
   text-align: center;
 }
@@ -174,9 +159,59 @@ p {
   border-color: #4CAF50;
   outline: none;
   cursor: pointer;
+  width: 100%;
 }
 
 .login-form input.btn:hover {
   color: #4CAF50;
   background: #ffffff;
+}
+
+
+@media(max-width: 575.98px) {
+  .container {
+    flex-direction: column;
+    box-shadow: none;
+    margin: 0 30px 0 30px;
+    height: auto;
+  }
+
+  .col-left,
+  .col-right {
+    flex-direction: column;
+    /* width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 30px; */
+    
+    /* -webkit-clip-path: none;
+    clip-path: none; */
+  }
+  img{
+    width: 400px;
+    margin-left: 100px;
+
+  }
+
+  .col-left {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .col-right{
+    width: 100%;
+     height: 400px;
+  }
+
+  .login-form {
+    object-fit: contain;
+    position: relative;
+    width: 100%;
+    margin: 0 30px 0 40px;
+    padding: 0 30px 0 30px;
+    color: #666666;
+  }
+  
+
 }
