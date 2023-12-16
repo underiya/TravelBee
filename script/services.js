@@ -25,9 +25,9 @@ function showBookingForm() {
     form.appendChild(toInput);
 
     // Create input for departure date
-    const departureDateInput = document.createElement('input');
-    departureDateInput.type = 'date';
-    form.appendChild(departureDateInput);
+    const dateInput = document.createElement('input');    
+    dateInput.type = 'date' ;
+    form.appendChild(dateInput);
     
     // Create a submit button
     const submitButton = document.createElement('button');
@@ -43,37 +43,55 @@ function showBookingForm() {
         const dateValue = dateInput.value;
         console.log('From:', fromValue, 'To:', toValue, 'Date:', dateValue);
 
-        // const bookingData = {
-        //     from : fromValue,
-        //     to : toValue,
-        //     date : dateValue
-        // }
+        const bookingData = {
+            from : fromValue,
+            to : toValue,
+            date : dateValue
+        };
+          // fetch booking data
+    let bookingURL = "https://657c1c05394ca9e4af157453.mockapi.io/bookings/bookings";
+    fetch(bookingURL,{
+        method: 'POST',
+        headers:{
+            'Content-Type' : 'application/json',
+        },
+        body: JSON.stringify(bookingData)
+    })
+        .then(res=>{
+            if(!res.ok){
+                throw new Error(`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then(data=>{
+            displayBookingDetails(data);
+            // alert(`Your booking is successful!\nDetails:\nFrom:${data.from}\nTo:${data.to}\nDate:${data.date}`);
+        })
+        .catch(error=>{
+            console.error(error);
+            alert("There was an error submitting your booking. Please try again.");
+        })
     });
-    
-   
+    let popup = document.getElementById("close");
+    popup.addEventListener('click',(e)=>{
+        closeModal();
+    })
+function displayBookingDetails(data) {
+    const modal = document.getElementById('bookingModal');
+    const detailsParagraph = document.getElementById('bookingDetails');
 
-    //fetch booking data
-    // let bookingURL = "https://657c1c05394ca9e4af157453.mockapi.io/bookings/bookings";
-    // fetch(bookingURL,{
-    //     method: 'POST',
-    //     headers:{
-    //         'Content-Type' : 'application/json',
-    //     },
-    //     body: JSON.stringify(bookingData)
-    //     .then(res=>{
-    //         if(!res.ok){
-    //             throw new Error(`HTTP error! Status: ${res.status}`);
-    //         }
-    //         return res.json();
-    //     })
-    //     .then(data=>{
-    //         alert(`Your booking is successful!\nDetails:\nFrom:${data.from}\nTo:${data.to}\nDate:${data.date}`);
-    //     })
-    //     .catch(error=>{
-    //         console.error(error);
-    //         alert("There was an error submitting your booking. Please try again.");
-    //     })
-    // });
+    // Populate the modal content with booking details
+    detailsParagraph.textContent = `Your booking is successful!   Details:  From:${data.from}  To:${data.to}  Date:${data.date}`;
+
+    // Display the modal
+    modal.style.display = 'block';
+}
+
+// Function to close the modal
+function closeModal() {
+    const modal = document.getElementById('bookingModal');
+    modal.style.display = 'none';
+}
 
     // Append the form to the container
     const formContainer = document.getElementById('booking-form-container');
