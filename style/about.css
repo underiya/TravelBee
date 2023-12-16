@@ -9,6 +9,10 @@ body {
   flex-direction: column;
 }
 
+.badabhai {
+  position: relative;
+}
+
 #video-container {
   position: sticky;
   top: 0;
@@ -37,7 +41,6 @@ body {
 
 #iskofixkaro img {
   width: 150px;
-  position: fixed;
   top: 20px;
   left: 20px;
   position: absolute;
@@ -50,7 +53,7 @@ body {
 
 #content #upperpara {
   color: #ff8c00;
-  font-size: 60px;
+  font-size: 52px;
   font-family: "Tilt Neon", sans-serif;
   text-shadow: 2px 2px 4px #888888;
 }
@@ -71,10 +74,10 @@ body {
   padding-top: 30px;
   background-image: url(/pics/people.jpg);
   background-size: cover;
+  padding-left: 2%;
 }
 .chotabhai .missionhai {
   width: 40%;
-  padding-left: 5%;
 }
 .chotabhai h1 {
   color: #FF9211;
@@ -84,10 +87,11 @@ body {
 }
 .chotabhai p {
   font-weight: 900;
-  font-size: 35px;
+  font-size: xx-large;
   color: rgb(0, 0, 0);
   font-family: "Caveat", cursive;
   text-align: justify;
+  font-weight: bolder;
 }
 
 .chotabhai img {
@@ -131,4 +135,111 @@ body {
   right: 10px;
   cursor: pointer;
   z-index: 1;
+}
+
+.aboutnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px 10px 10px;
+  background-color: #D7CA9A;
+}
+
+.logo {
+  width: 70px; /* Adjust the width as needed */
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333; /* Adjust the color as needed */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff4500; /* Color on hover */
+  transform: scale(1.2);
+}
+
+.user-actions a {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ff4500, orange);
+  padding: 7% 15%;
+  color: white;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.user-actions a:hover {
+  transform: scale(1.1);
+}
+
+.user-actions {
+  display: flex;
+  gap: 20px;
+}
+
+/*  <----------Footer------------> */
+footer {
+  padding: 2%;
+}
+
+footer div {
+  display: flex;
+}
+
+footer div a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+footer div div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: start;
+}
+
+ul {
+  margin-top: 1%;
+  padding: 2%;
+  font-weight: bold;
+  list-style: none;
+}
+
+ul li {
+  padding: 7% 2%;
+}
+
+#end {
+  display: flex;
+  justify-content: space-between;
+}
+
+#end div {
+  display: flex;
+  padding: 2% 5%;
+  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  background: linear-gradient(90deg, #ff4500, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.3s ease;
+}
+
+ul li a:hover {
+  background-position: 100%;
 }/*# sourceMappingURL=about.css.map */

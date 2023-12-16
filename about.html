@@ -7,15 +7,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kanit:wght@600&family=Lora&family=Open+Sans&family=Tilt+Neon&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style/about.css" />
-  <style>
-    /* Add your additional CSS styles here */
-  </style>
-  <title>About</title>
+  <title>TravelBee-About</title>
 </head>
 <body>
   <div class="mainparenthai">
+    <div class="aboutnav">
+      <a href="index.html" id="logo"><img src="pics/clear logo-crop.png" alt="Logo" class="logo" /></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="">About</a>
+        <a href="services.html">Services</a>
+        <a href="#">Your Package</a>
+      </div>
+      <div class="user-actions">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </div>
+    
     <div class="badabhai">
-      <a href="index.html" id="iskofixkaro"><img src="pics/clear logo.png" alt="" class="actuallogo" /></a>
       <div id="video-container">
         <video src="background videos/laugh.mp4" autoplay muted loop id="video1"></video>
       </div>
@@ -45,84 +55,53 @@
         <img src="pics/sunset-pool.jpg" alt="Travel Package Photo" style="max-width: 100%; max-height: 300px;">
       </div>
     </div>
+
+    <footer>
+      <div>
+        <div>
+          <div>
+            <img width="100px" src="./pics/clear logo.png" alt="" />
+          </div>
+          <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, quas
+            deleniti! Reiciendis beatae doloremque dolorum mollitia provident
+            adipisci nobis minus. Totam, minima velit consectetur enim
+            consequuntur fugiat recusandae autem quaerat.
+          </div>
+        </div>
+        <ul>
+          ABOUT
+          <li><a href="">About Us</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">News & Blog</a></li>
+        </ul>
+        <ul>
+          MOVEMENT
+          <li><a href="">What's Travel Bee</a></li>
+          <li><a href="">Support Us</a></li>
+        </ul>
+        <ul>
+          COMPANY
+          <li><a href="">Why Travel Bee</a></li>
+          <li><a href="">Capital</a></li>
+          <li><a href="">Security</a></li>
+        </ul>
+        <ul>
+          SUPPORT
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Support Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div id="end">
+      <div>&copy 2023 Travel Bee, All rights reserved &#174</div>
+      <div>
+        <div>Term & Agrements</div>
+        <div>Privacy policy</div>
+      </div>
+    </div>
   </div>
-  <script>
-    const sahihaiImages = [
-      'pics/beach.jpg',
-      'pics/nightblack.jpg',
-      'pics/family.jpg',
-      'pics/waiter-serving.jpg'
-    ];
-
-    const thikhaiImages = [
-      'pics/girl-with-paddle.jpg',
-      'pics/breakfast-hotel.jpg',
-      'pics/camp.jpg',
-      'pics/sunset-pool.jpg'
-    ];
-
-    let sahihaiIndex = 0;
-    let thikhaiIndex = 0;
-
-    function changeSahihaiImage() {
-      const sahihaiElement = document.querySelector('.sahihai');
-      sahihaiElement.src = sahihaiImages[sahihaiIndex];
-      sahihaiIndex = (sahihaiIndex + 1) % sahihaiImages.length;
-    }
-
-    function changeThikhaiImage() {
-      const thikhaiElement = document.querySelector('.thikhai');
-      thikhaiElement.src = thikhaiImages[thikhaiIndex];
-      thikhaiIndex = (thikhaiIndex + 1) % thikhaiImages.length;
-    }
-
-    setInterval(changeSahihaiImage, 1500);
-    setInterval(changeThikhaiImage, 1500);
-
-    // <--Language-->
-
-    // Array of different language translations for "Hello"
-    const languages = ['Hallo','नमस्ते', '你好', 'Bonjour', 'Hola', 'Ciao','مرحبًا'];
-
-    // Function to update the text with the next language
-    function updateHelloText() {
-      const helloTextElement = document.getElementById('helloText');
-      const currentLanguage = helloTextElement.textContent;
-      const nextLanguage = languages[(languages.indexOf(currentLanguage) + 1) % languages.length];
-      helloTextElement.textContent = nextLanguage;
-    }
-
-    // Set interval to update the text every 0.7 seconds
-    setInterval(updateHelloText, 700);
-
-    // Pop-up ad
-    let modalClosed = false;
-
-    // Function to open the modal
-    function openModal() {
-      if (!modalClosed) {
-        document.getElementById('myModal').style.display = 'block';
-      }
-    }
-
-    // Function to close the modal
-    function closeModal() {
-      document.getElementById('myModal').style.display = 'none';
-      modalClosed = true;
-    }
-
-    // Update text function (as in the previous example)
-    function updateHelloTextAndOpenModal() {
-      updateHelloText();
-
-      // Show the ad modal after the first language change
-      if (languages.indexOf(helloText.textContent) === languages.length - 1) {
-        openModal();
-      }
-    }
-
-    // Set interval to update the text every 0.7 seconds
-    setInterval(updateHelloTextAndOpenModal, 700);
-  </script>
+  <script src="script/about.js"></script>
 </body>
 </html>
