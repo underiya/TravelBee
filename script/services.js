@@ -80,7 +80,11 @@ function showBookingForm() {
     function displayBookingDetails(data) {
         const modal = document.getElementById('bookingModal');
         const detailsParagraph = document.getElementById('bookingDetails');
-        detailsParagraph.textContent = `Your booking is successful! \n  Details:\n  From:${data.from}\n  To:${data.to}\n  Date:${data.date}`;
+        detailsParagraph.textContent = `Your booking is successful!  
+        Details:
+        From:${data.from}  
+        To:${data.to}
+        Date:${data.date}`;
         modal.style.display = 'block';
     }
 
