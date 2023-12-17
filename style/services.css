@@ -326,12 +326,16 @@ input::placeholder {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     background: linear-gradient(to bottom, #066455 0%, #7a9916e7 100%, rgb(207, 182, 73));
-
+    /* background-image: url("/style/hot-air-balloon.jpg"); */
+    /* background-size: contain; */
 }
 
 .package-card {
     width: 300px;
     margin: 16px;
+    text-justify: auto;
+    text-align: center;
+    padding-bottom: 1%;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;

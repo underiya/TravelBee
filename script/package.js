@@ -62,7 +62,10 @@ function createCard(packageItem) {
     const price = document.createElement('h4');
     price.textContent = `Price: $${packageItem.price}`;
 
-    card.append(image, destination, activities, days, price);
+    const book = document.createElement('button');
+    book.innerText = "Book Now";
+
+    card.append(image, destination, activities, days, price,book);
 
     return card;
 }
