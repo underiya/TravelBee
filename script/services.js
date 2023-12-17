@@ -14,6 +14,7 @@ function showBookingForm() {
 
     // Create input for "From" city
     const fromInput = document.createElement('input');
+    fromInput.required=true;
     fromInput.type = 'text';
     fromInput.placeholder = 'Enter place of origin';
     form.appendChild(fromInput);
@@ -21,12 +22,14 @@ function showBookingForm() {
     // Create input for "To" city
     const toInput = document.createElement('input');
     toInput.type = 'text';
+    toInput.required=true;
     toInput.placeholder = 'Enter Destination';
     form.appendChild(toInput);
 
     // Create input for departure date
     const dateInput = document.createElement('input');
     dateInput.type = 'date';
+    dateInput.required = true;
     form.appendChild(dateInput);
 
     // Create a submit button
