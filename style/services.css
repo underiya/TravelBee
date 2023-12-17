@@ -325,9 +325,7 @@ input::placeholder {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-    background: linear-gradient(to bottom, #066455 0%, #869638e7 100%);
-    /* Using a linear gradient at a specific angle with three colors */
-background: linear-gradient(to bottom, #066455 0%, #7a9916e7 100%, rgb(207, 182, 73));
+    background: linear-gradient(to bottom, #066455 0%, #7a9916e7 100%, rgb(207, 182, 73));
 
 }
 
