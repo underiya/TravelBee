@@ -51,13 +51,13 @@ function createCard(packageItem) {
     image.append(img);
 
     const destination = document.createElement('h3');
-    destination.textContent = packageItem.destination;
+    destination.textContent = `Destination : ${packageItem.destination}`;
 
     const activities = document.createElement('p');
-    activities.textContent = packageItem.activities;
+    activities.innerHTML = `<strong> Activities : </strong> ${packageItem.activities}`;
 
     const days = document.createElement('p');
-    days.textContent = `${packageItem.days} N`;
+    days.innerHTML = `<strong> Days : ${packageItem.days} N </strong>`;
 
     const price = document.createElement('h4');
     price.textContent = `Price: $${packageItem.price}`;
