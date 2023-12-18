@@ -1,7 +1,13 @@
-// import { nav } from "./navbar.js";
-// let navbar=document.querySelector(".navbar");
-// navbar.innerHTML=nav;
-//taking button
+import { nav } from "./navbar.js";
+import { footer } from "./footer.js";
+let navbar=document.querySelector(".aboutnav")
+navbar.innerHTML=nav;
+
+
+let foot=document.querySelector("footer");
+foot.innerHTML=footer;
+
+// taking button
 let btn = document.getElementById("book-now-btn");
 
 //adding eventlistener on book now button
