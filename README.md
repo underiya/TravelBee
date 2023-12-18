@@ -55,7 +55,7 @@ Preview the live template here: [TravelBee Live Demo](https://travel-bee-b66ab7.
 ## Screenshots
 
 ### Home Page
-![Home](https://github.com/underiya/code-rhapsody-3467/assets/79692865/34b7096f-9056-44c1-a6c6-71e14dfc0cc1)
+![home2](https://github.com/underiya/code-rhapsody-3467/assets/79692865/79148185-3657-4704-a912-c5f775e17b82)
 ### Login 
 
 ![Login](https://github.com/heyyrahul/vivid-roll-405/assets/79692865/f5cc0a90-2daa-42f8-868f-553d2eba2db0)
