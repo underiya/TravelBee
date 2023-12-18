@@ -1,3 +1,7 @@
+// import { nav } from "./navbar";
+// let navbar=document.querySelector(".aboutnav")
+// navbar.innerHTML=nav;
+
 // Function to fetch and display travel packages
 const packagesContainer = document.getElementById("packages-container");
 const packagesURL = "https://657c1c05394ca9e4af157453.mockapi.io/bookings/travel_packages";
