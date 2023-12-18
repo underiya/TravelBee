@@ -1,7 +1,7 @@
 # TravelBee
 
 TravelBee is a website designed to make travel planning easy and convenient. Users can explore travel packages, select destinations, choose dates, and book their journeys seamlessly.
-Preview the live template here: [TravelBee Live Demo](https://travel-bee-b66ab7.netlify.app/)
+Preview the live template here: [TravelBee Live Demo](https://travel-bee-1.netlify.app/)
 
 ## Table of Contents
 
