@@ -73,3 +73,8 @@ Preview the live template here: [TravelBee Live Demo](https://travel-bee-1.netli
 ### About
 
 ![about](https://github.com/heyyrahul/vivid-roll-405/assets/79692865/05d0b2c4-32f9-4aef-a73d-97f81cb60301)
+## Contributors
+1. Deepak Underiya
+2. Shyamgopal Biswas
+3. Heena Parveen
+4. Rahul Kumar
