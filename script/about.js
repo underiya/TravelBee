@@ -1,3 +1,8 @@
+import { nav } from "./navbar.js";
+
+let navbar=document.querySelector(".aboutnav")
+navbar.innerHTML=nav;
+
 const sahihaiImages = [
     'pics/beach.jpg',
     'pics/nightblack.jpg',

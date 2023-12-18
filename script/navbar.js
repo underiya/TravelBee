@@ -5,9 +5,9 @@
       </a>
       <div class="nav-links">
       <a href="./index.html">Home</a>
-      <a href="./about.html">About</a>
       <a href="./services.html">Services</a>
       <a href="#">Your Package</a>
+      <a href="./about.html">About</a>
       </div>
       <div class="user-actions">
       <a href="login.html">Login</a>
