@@ -22,7 +22,7 @@
               }
               if(email.value === data[i].email && pass.value === data[i].password){
                    console.log("logIn Successful");
-                   window.location.replace("./index.html");
+                   window.location.replace("./services.html");
                    return
               }
               if(email.value === `admin@gmail.com` && pass.value === `admin`){
@@ -30,7 +30,7 @@
                   return
               }
             }
-            console.log("Incorrect Email or Password");
+            alert("Incorrect Email or Password");
         });
         
     });
