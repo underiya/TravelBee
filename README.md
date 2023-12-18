@@ -1,15 +1,15 @@
 # TravelBee
 
-At TravelHub, we believe in turning your travel dreams into reality. Whether you're an adventure seeker, a luxury traveler, or someone looking for a quick getaway, we've got you covered. Our platform is designed to simplify the travel booking process, offering a one-stop solution for flights, hotels, and exclusive travel packages.
-Preview the live template here: [TravelBee Live Demo](https://travel-bee-b66ab7.netlify.app/)
+TravelBee is a website designed to make travel planning easy and convenient. Users can explore travel packages, select destinations, choose dates, and book their journeys seamlessly.
+Preview the live template here: [TravelBee Live Demo](https://travel-bee-1.netlify.app/)
 
 ## Table of Contents
+
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Screenshots](#Screenshots)
-
 
 ## Features
 
@@ -21,17 +21,19 @@ Preview the live template here: [TravelBee Live Demo](https://travel-bee-b66ab7.
 ## Getting Started
 
 ### Prerequisites
+
 - A modern web browser
 - A text editor (e.g., VS Code, Sublime Text)
 - Basic knowledge of HTML,CSS,SASS and JAVA SCRIPT
 
   ## Technologies Used
-<ul>
-<li>HTML5</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>SASS</li>  
-</ul>
+
+  <ul>
+  <li>HTML5</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>SASS</li>  
+  </ul>
 
 ### Installation
 
@@ -40,7 +42,9 @@ Preview the live template here: [TravelBee Live Demo](https://travel-bee-b66ab7.
    ```bash
    git clone https://github.com/your-username/TravelBee.git
    cd TravelBee
-2. Unzip the file if you've downloaded  it as a ZIP.
+   ```
+
+2. Unzip the file if you've downloaded it as a ZIP.
 3. Open the folder in your text editor.
 4. Use a SASS compiler to compile the `.scss` files to `.css` or edit the CSS directly.
 5. Open the `index.html` file in your web browser to view the template.
@@ -56,9 +60,7 @@ Preview the live template here: [TravelBee Live Demo](https://travel-bee-b66ab7.
 
 ### Home Page
 
-![Home](https://github.com/underiya/code-rhapsody-3467/assets/79692865/f9d58d74-fa0f-4c56-9fdb-b5bb63fac066)
-
-### Login 
+### Login
 
 ![Login](https://github.com/heyyrahul/vivid-roll-405/assets/79692865/f5cc0a90-2daa-42f8-868f-553d2eba2db0)
 
@@ -68,9 +70,6 @@ Preview the live template here: [TravelBee Live Demo](https://travel-bee-b66ab7.
 
 ### Services
 
-![services](https://github.com/underiya/code-rhapsody-3467/assets/79692865/6d9b80d4-ded6-4f87-a76f-703dce6052d6)
-
 ### About
 
 ![about](https://github.com/heyyrahul/vivid-roll-405/assets/79692865/05d0b2c4-32f9-4aef-a73d-97f81cb60301)
-
