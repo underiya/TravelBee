@@ -64,7 +64,9 @@
     color: orangered;
   }
   #adv-img {
-    width: 100%;
+   width: 80%;
+   margin: auto;
+ margin-left: 5%;
   }
   #adventure div:first-child {
     width: 60%;
