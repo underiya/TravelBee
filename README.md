@@ -72,7 +72,7 @@ Preview the live template here: [TravelBee Live Demo](https://travel-bee-b66ab7.
 
 
 ## Contributors
-1. <a href="https://github.com/underiya">Deepak Underiya</a> 
-2. <a href="https://github.com/S-G-Biswas">Shyamgopal Biswas</a>  
-3. <a href="https://github.com/parveenheena"> Heena Parveen</a>
-4. <a href="https://github.com/heyyrahul">Rahul Kumar</a> 
+1. <a href="https://github.com/underiya" target="_blank">Deepak Underiya</a> 
+2. <a href="https://github.com/S-G-Biswas" target="_blank">Shyamgopal Biswas</a>  
+3. <a href="https://github.com/parveenheena" target="_blank"> Heena Parveen</a>
+4. <a href="https://github.com/heyyrahul" target="_blank">Rahul Kumar</a> 
