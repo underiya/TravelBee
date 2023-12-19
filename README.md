@@ -72,7 +72,7 @@ Preview the live template here: [TravelBee Live Demo](https://travel-bee-b66ab7.
 
 
 ## Contributors
-1. Deepak Underiya
-2. Shyamgopal Biswas
-3. Heena Parveen
-4. Rahul Kumar
+1. <a href="">Deepak Underiya</a> 
+2. <a href="">Shyamgopal Biswas</a>  
+3. <a href=""> Heena Parveen</a>
+4. <a href="">Rahul Kumar</a> 
